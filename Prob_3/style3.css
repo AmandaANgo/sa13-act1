@@ -1,0 +1,92 @@
+/* style.css */
+
+body {
+    font-family: 'Lucida Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f57777; /* light header background color */
+    color: #fff; /* White text color */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+main {
+    background-color: #b4b4b4; /* light header background color */
+    padding: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery-item {
+    width: calc(33.33% - 20px); /* Three items per row with spacing between */
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-form input[type="text"],
+
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact-form input[type="submit"] {
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #2da6c7;
+}
+
+footer {
+    background-color: #f57777; /* matching background color */
+    color: #fff; /* White text color */
+    text-align: center;
+    padding: 20px 0;
+}
